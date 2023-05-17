@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #A60321;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada1.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.logo {
+    width: 90px;
+    position: relative;
+}
+
+.divlogo {
+    position: relative;
+    /* padding: 0 0 10px 0; */
+}
+
+nav .divlogo a {
+    display: flex;
+    align-items: center;
+}
+nav {
+    text-align: justify;
+    padding: 4px 50px;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background: #bc4e9c;
+    align-items: center;
+    align-items: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.394);
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "SuperSans";
+}
+
+nav p {
+    display: inline-block;
+    font-weight: 600;
+    position: relative;
+}
+
+.logo-texto {
+    font-family: "Alegra";
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    position: relative;
+    padding-left: 8px;
+}
+
+nav div ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: "SuperSans", sans-serif;
+    font-size: 1.2rem;
+}
+
+nav div a,
+#cont, nav .navboton a {
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+nav div a:hover,
+#cont:hover {
+    color: #ffffff;
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #00677b;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+.slider-frame{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #00677b;
+    display: flex;
+    width: 32%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+
+footer {
+    background: #bc4e9c;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    color: #c3c3c3;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer div img {
+    width: 256px;
+    text-align: left;
+    /* position: relative; */
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 62px;
+    left: -450px;
+}
+
+.contenedorfoot {
+    width: 250px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contenedorfoot2 {
+    width: 250px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.contenedorfoot2 a img {
+    width: 32px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-left: 46px;
+    text-align: right;
+}
+
+.contenedorfoot2 a {
+    text-decoration: none;
+}
+
+.contenedorfoot2 h2 {
+    color: #000;
+    border-bottom: 2px var(--color-rojo) solid;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    background: #A60321;
+    border: 3px solid #65de7111;
+    border-radius: 100px;
+    box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.216);
+}
+
+
+footer ul {
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "SuperSans";
+}
+
+footer div ul li a {
+    position: relative;
+    /* text-decoration: none; */
+    color: rgb(0, 0, 0);
+    margin: 0 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: "SuperSans", sans-serif;
+    font-size: 1rem;
+}
+
+footer div a {
+    /* text-decoration: none; */
+    transition: all ease 1s;
+}
+
+.links {
+    margin: 20px 0 50px 0;
+}
+
+.ubi {
+    margin-top: 30px;
+}
+
+.ubi h2 {
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 5px solid #A60318;
+    text-align: left;
+}
+
+iframe {
+    margin-top: 30px;
+}
+
+/* Formulario */
+
+.conte_form {
+    display: inline-block;
+    position: relative;
+    padding: 15px 7px;
+    background: transparent;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 25px rgba(30, 29, 29, 0.205) ; */
+    max-width: 484px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.conte_form h2 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 5px solid #A60318;
+    text-align: left;
+}
+
+.conte_form .inputbox {
+    position: relative;
+    width: 180px;
+    height: 38px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.conte_form .inputboxTextarea {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+#form_correo {
+    margin-right: 40px;
+}
+
+#form_nombre {
+    width: 400px;
+}
+
+textarea {
+    font-family: "SuperSans", sans-serif;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid #111;
+    resize: none;
+    color: #111;
+    outline: none;
+    padding: 10px;
+}
+
+.conte_form .inputbox:last-child {
+    margin-bottom: 0;
+    margin-left: 60px;
+}
+
+.conte_form .inputbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    background: #fff;
+}
+#botonArriba{
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 50px;
+    transition: all ease 1s;
+}
+
+.conte_form .inputbox span,
+.conte_form .inputboxTextarea span {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(111, 111, 111);
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+    font-family: "SuperSans", sans-serif;
+}
+
+.conte_form .inputbox input:focus~span,
+.conte_form .inputbox input:valid~span,
+#form_correo~span,
+#form_nombre~span {
+    transform: translateX(-8px) translateY(-26px);
+    font-size: .8rem;
+    color: #111;
+}
+
+.conte_form .inputbox input[type="submit"] {
+    background: #A60318;
+    color: #fff;
+    border: none;
+    max-width: 120px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "SuperSans", sans-serif;
+}
+
+.conte_form .inputbox input[type="submit"]:hover {
+    background: #c41e34;
+}
