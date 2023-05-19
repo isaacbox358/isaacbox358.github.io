@@ -62,7 +62,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100%;
+    width: 120%;
     height: 70px;
     display: flex;
     background: #bc4e9c;
@@ -188,44 +188,6 @@ main .sobre-nosotros{
 
 /* Galeria */
 
-.slider-frame{
-    width: 1280px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-
-    animation: slide 16s infinite alternate ease-in-out;
-}
-
-.slider-frame ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-}
-
-.slider-frame li{
-    list-style: none;
-    width: 100%;
-}
-
-.slider-frame{
-    width: 100%;
-}
-
-@keyframes slide {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
-}
-
 .portafolio{
     background: #f2f2f2;
 }
@@ -289,7 +251,7 @@ main .sobre-nosotros{
     background: #00677b;
     display: flex;
     width: 32%;
-    height: 200px;
+    height: 100%;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
@@ -297,8 +259,8 @@ main .sobre-nosotros{
 }
 
 .cards .card img{
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
     object-fit: cover;
     border: 3px solid #fff;
     border-radius: 50%;
@@ -307,6 +269,7 @@ main .sobre-nosotros{
 
 .cards .card > .contenido-texto-card{
     width: 60%;
+    height: 60%;
     color: #fff;
 }
 
@@ -588,3 +551,40 @@ textarea {
 .conte_form .inputbox input[type="submit"]:hover {
     background: #c41e34;
 }
+
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  .slider ul{
+      display: flex;
+      animation: cambio 20s infinite alternate linear;
+      width: 400%;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+  .slider img{
+      width: 100%;
+      height: 100%;
+  }
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+      
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+      
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+  }
+  @media only screen and (min-width:320px) and (max-width:768px){
+  .slider, .slider ul, .slider img{
+      height: 100vh;
+  }
+  }
