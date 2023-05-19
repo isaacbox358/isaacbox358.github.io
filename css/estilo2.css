@@ -18,13 +18,13 @@
     --color-cafe: #591902;
     --color-cafeclaro: #d9b29c;
 }
-section
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    
+    max-width: 100vw;
 }
 
 html{
@@ -41,12 +41,8 @@ main {
 } */
 
 .contenedor {
-    padding: 60px 0;
-    margin: 0 auto;
-    max-width: 1400px;
-    /* overflow: hidden; */
+    max-width: 100vw;
     text-align: center;
-    /* background: mediumseagreen; */
 }
 
 .titulo {
@@ -161,7 +157,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100%;
+    width: 120%;
     height: 70px;
     display: flex;
     background: #bc4e9c;
@@ -227,7 +223,7 @@ h4 {
 }
 
 section {
-    width: 1400px;
+    width: 100vw;
     margin: 0 auto;
     font-family: "SuperSans", sans-serif;
 }
@@ -680,15 +676,20 @@ textarea {
 }
 
 .fondo1{
-    width: 1390px;
+    width: 100vw;
     height: 366px;
     background-image: url(../img/vr3.jpeg);
     background-position: center;
     float: left;
     text-align: center;
 }
+
+img{
+    width: 100%;
+}
+
 .fondo2{
-    width: 1390px;
+    width: 100vw;
     height: 366px;
     background-image: url(../img/vr1.png);
     background-position: center;
@@ -696,7 +697,7 @@ textarea {
     text-align: center;
 }
 .fondo3{
-    width: 1390px;
+    width: 100vw;
     height: 366px;
     background-image: url(../img/vr5.png);
     background-position: center;
@@ -704,7 +705,7 @@ textarea {
     text-align: center;
 }
 .fondo4{
-    width: 1390px;
+    width: 100vw;
     height: 366px;
     background-image: url(../img/vr8.jpg);
     background-position: center;
@@ -712,7 +713,7 @@ textarea {
     text-align: center;
 }
 .fondo5{
-    width: 1390px;
+    width: 100vw;
     height: 366px;
     background-image: url(../img/vr10.jpg);
     background-position: center;
